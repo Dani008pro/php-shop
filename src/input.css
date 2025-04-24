@@ -1,1 +1,46 @@
 @import "tailwindcss";
+@import "tailwindcss";
+body {
+  background: linear-gradient(45deg, #005f78, #00b8db);
+  background-size: 400% 400%;
+  animation: neonGlow 10s ease infinite;
+  overflow: hidden;
+  position: relative;
+}
+
+@keyframes neonGlow {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.txt {
+  color: white;
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.7);
+}
+
+.shop-item {
+  position: absolute;
+  opacity: 0.7;
+  z-index: 1;
+  animation: floatItem 30s linear infinite;
+}
+
+@keyframes floatItem {
+  0% {
+    transform: translateY(100vh) translateX(0) rotate(0deg);
+  }
+  100% {
+    transform: translateY(-100vh) translateX(100px) rotate(360deg);
+  }
+}
+
+.shop-icon {
+  filter: drop-shadow(0 0 8px rgba(0, 0, 0, 0.4));
+}

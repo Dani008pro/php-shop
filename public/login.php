@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <?php include("./style.php"); ?>
-    <title>Store | Signup</title>
+    <title>Store | Login</title>
+
 </head>
 <body class="px-40">
-
     <div class="shop-item" style="left: 10%; animation-delay: 0s;">
         <svg class="shop-icon fill-black" width="60" height="60" viewBox="0 0 24 24" fill="#ff00cc">
             <path d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.08-.14.12-.31.12-.48 0-.55-.45-1-1-1H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"/>
@@ -40,7 +40,7 @@
     </div>
     
     <div class="container mx-auto w-full  flex justify-center items-center h-screen">
-        <form action="./adduserdb.php" class="border-none w-1/3 h-auto px-8 rounded-lg z-10 bg-[rgba(255,255,255,0.3)] backdrop-blur-xs backdrop-filter shadow-2xl shadow-[rgba(0,0,0,0.9)]" method="post">
+        <form action="" class="border-none w-1/3 h-auto px-8 rounded-lg z-10 bg-[rgba(255,255,255,0.3)] backdrop-blur-xs backdrop-filter shadow-2xl shadow-[rgba(0,0,0,0.9)]" method="post">
             <h1 class="txt text-center 
              font-mono mb-8 font-bold text-3xl mt-8 text-red-800">Store</h1>
             <div class="space-y-2">
@@ -53,13 +53,11 @@
                     <label for="pass" class="txt  
                     ">Password:</label>
                     <input type="text" class=" mb-4 focus:shadow-2xl bg-white focus:shadow-[rgba(255,255,255,0.8)] py-1 px-2 focus:scale-[1.03] transition-all outline-none  rounded-md "  name="password" required>
-                    <label for="pass" class="txt  
-                    ">Confrim Password:</label>
-                    <input type="text" class=" mb-4 focus:shadow-2xl bg-white focus:shadow-[rgba(255,255,255,0.8)] py-1 px-2 focus:scale-[1.03] transition-all outline-none  rounded-md "  name="password" required>
                 </div>
-                
-                <button type="submit" class="font-bold mb-8 py-2  w-full bg-black text-white  rounded-lg  hover:bg-sky-800 transition-all duration-300 ease-in cursor-pointer outline-none">Signup to Store</button>                
-                
+                <div class="flex justify-between gap-4  mb-8">
+                    <button type="submit" class="font-bold  w-1/2 bg-white p-2 rounded-lg   hover:bg-gray-200 transition-all duration-300 ease-in cursor-pointer outline-none">Login to Store</button>
+                    <button type="submit" class="font-bold  w-1/2 bg-black text-white  rounded-lg  hover:bg-sky-800 transition-all duration-300 ease-in cursor-pointer outline-none">Signin to Store</button>                
+                </div>
             </div>
         </form>
     </div>
